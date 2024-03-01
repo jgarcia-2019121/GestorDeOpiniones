@@ -1,0 +1,479 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "OpinionManager",
+    "dateExported": "2024-03-01T18:25:21.977Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "7e213f96-2eee-4c48-ba59-567fd0bbc18d",
+            "name": "USER",
+            "containerId": "",
+            "created": "2024-03-01T15:12:59.208Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "02922e8d-ae95-4d24-9081-0b0bd8c201a5",
+            "name": "CATEGORY",
+            "containerId": "",
+            "created": "2024-03-01T15:12:59.209Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "6b4f37f9-a97d-45c3-86ad-f1017fe1bdb5",
+            "name": "OPINION",
+            "containerId": "",
+            "created": "2024-03-01T15:12:59.210Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "edfd3f01-0e90-41e4-9310-c48b1cedc92d",
+            "name": "COMMENTARY",
+            "containerId": "",
+            "created": "2024-03-01T15:12:59.211Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ef1ac69c-43e2-42a7-8124-cb638a73a76f",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "7e213f96-2eee-4c48-ba59-567fd0bbc18d",
+            "name": "userTest",
+            "url": "test",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-01T15:12:59.208Z",
+            "modified": "2024-03-01T15:12:59.208Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf2faf9d-9e2c-4328-bbda-0404ca908b0e",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "7e213f96-2eee-4c48-ba59-567fd0bbc18d",
+            "name": "registerUser",
+            "url": "register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-01T15:12:59.209Z",
+            "modified": "2024-03-01T15:21:41.463Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Armas"
+                    },
+                    {
+                        "name": "username",
+                        "value": "carmas"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "carmas@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "98736215"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d8f33c21-7cfc-4dd5-af63-0bdeebdc555b",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "7e213f96-2eee-4c48-ba59-567fd0bbc18d",
+            "name": "login",
+            "url": "login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-01T15:12:59.210Z",
+            "modified": "2024-03-01T15:17:32.522Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "jgarcia"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b7ed75f6-a537-4b31-9461-7d305c27e4dc",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "7e213f96-2eee-4c48-ba59-567fd0bbc18d",
+            "name": "updateUser",
+            "url": "update/65e1f285a4fe975b9bee340b",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-01T15:12:59.211Z",
+            "modified": "2024-03-01T16:09:49.654Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZjE4OGE0ZmU5NzViOWJlZTM0MDgiLCJ1c2VybmFtZSI6ImpnYXJjaWEiLCJuYW1lIjoiSm9uYXRoYW4iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMwNjI1MiwiZXhwIjoxNzA5MzE3MDUyfQ.FaNHmZ61t3yJote7H0_A3zsg4LsfyML3h4nganEfSp0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8e9069f8-7e13-4746-8625-7d157e26d8b3",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "02922e8d-ae95-4d24-9081-0b0bd8c201a5",
+            "name": "registerCategory",
+            "url": "category/register",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-03-01T15:12:59.212Z",
+            "modified": "2024-03-01T16:36:22.641Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZjE4OGE0ZmU5NzViOWJlZTM0MDgiLCJ1c2VybmFtZSI6ImpnYXJjaWEiLCJuYW1lIjoiSm9uYXRoYW4iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMwNjI1MiwiZXhwIjoxNzA5MzE3MDUyfQ.FaNHmZ61t3yJote7H0_A3zsg4LsfyML3h4nganEfSp0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Nacional"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Empresa nacional"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "536c16ba-f231-49c6-bebe-604323bdef4b",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "02922e8d-ae95-4d24-9081-0b0bd8c201a5",
+            "name": "testCategory",
+            "url": "category/test",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-01T15:12:59.213Z",
+            "modified": "2024-03-01T15:12:59.213Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ade3434a-8929-4788-85c5-a24ebf919ae3",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "6b4f37f9-a97d-45c3-86ad-f1017fe1bdb5",
+            "name": "registerOpinion",
+            "url": "opinion/register",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-01T15:12:59.214Z",
+            "modified": "2024-03-01T16:40:55.857Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZjE4OGE0ZmU5NzViOWJlZTM0MDgiLCJ1c2VybmFtZSI6ImpnYXJjaWEiLCJuYW1lIjoiSm9uYXRoYW4iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMwNjI1MiwiZXhwIjoxNzA5MzE3MDUyfQ.FaNHmZ61t3yJote7H0_A3zsg4LsfyML3h4nganEfSp0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "Empresa fraude nacional"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e20406a4fe975b9bee340f"
+                    },
+                    {
+                        "name": "text",
+                        "value": "Una empresa nacional de Guatemala a causado fraude a sus trabajadores"
+                    },
+                    {
+                        "name": "autor",
+                        "value": "65e1f188a4fe975b9bee3408"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "83c667d0-b683-43b5-bb71-38bb3c469476",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "edfd3f01-0e90-41e4-9310-c48b1cedc92d",
+            "name": "testComment",
+            "url": "comment/test",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-03-01T15:12:59.215Z",
+            "modified": "2024-03-01T16:43:37.244Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1be00d80-2283-416a-83e3-1df8309d626e",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "edfd3f01-0e90-41e4-9310-c48b1cedc92d",
+            "name": "registerComment",
+            "url": "comment/register",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-03-01T15:12:59.216Z",
+            "modified": "2024-03-01T16:46:37.471Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZjE4OGE0ZmU5NzViOWJlZTM0MDgiLCJ1c2VybmFtZSI6ImpnYXJjaWEiLCJuYW1lIjoiSm9uYXRoYW4iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMwNjI1MiwiZXhwIjoxNzA5MzE3MDUyfQ.FaNHmZ61t3yJote7H0_A3zsg4LsfyML3h4nganEfSp0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "opinion",
+                        "value": "65e20517a4fe975b9bee3415"
+                    },
+                    {
+                        "name": "text",
+                        "value": "Esas personas no deverian de poder trabajar en futuros poryectos nacionales"
+                    },
+                    {
+                        "name": "autor",
+                        "value": "65e1f188a4fe975b9bee3408"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "efbd3a52-0517-4e93-ab1c-fbc6f6628ce6",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "6b4f37f9-a97d-45c3-86ad-f1017fe1bdb5",
+            "name": "testOpinion",
+            "url": "opinion/test",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-03-01T17:05:50.844Z",
+            "modified": "2024-03-01T17:06:08.833Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "33cab76c-61c9-4405-b511-4826b7ad23c1",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "02922e8d-ae95-4d24-9081-0b0bd8c201a5",
+            "name": "updateCategory",
+            "url": "category/update/65e20406a4fe975b9bee340f",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-01T17:17:21.699Z",
+            "modified": "2024-03-01T17:21:11.581Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZjE4OGE0ZmU5NzViOWJlZTM0MDgiLCJ1c2VybmFtZSI6ImpnYXJjaWEiLCJuYW1lIjoiSm9uYXRoYW4iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMwNjI1MiwiZXhwIjoxNzA5MzE3MDUyfQ.FaNHmZ61t3yJote7H0_A3zsg4LsfyML3h4nganEfSp0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Internacional"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5312700e-e318-4dd3-9344-4e5225d96906",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "02922e8d-ae95-4d24-9081-0b0bd8c201a5",
+            "name": "deleteCategory",
+            "url": "",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-03-01T17:22:49.685Z",
+            "modified": "2024-03-01T17:22:49.685Z",
+            "headers": []
+        },
+        {
+            "_id": "bad3b542-46c4-46ff-94bb-3021f3de4142",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "02922e8d-ae95-4d24-9081-0b0bd8c201a5",
+            "name": "searchCategory",
+            "url": "category/search",
+            "method": "POST",
+            "sortNum": 140000,
+            "created": "2024-03-01T17:25:39.923Z",
+            "modified": "2024-03-01T17:27:36.469Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZjE4OGE0ZmU5NzViOWJlZTM0MDgiLCJ1c2VybmFtZSI6ImpnYXJjaWEiLCJuYW1lIjoiSm9uYXRoYW4iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMwNjI1MiwiZXhwIjoxNzA5MzE3MDUyfQ.FaNHmZ61t3yJote7H0_A3zsg4LsfyML3h4nganEfSp0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Internacional"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d036ab6a-3b02-4f9c-88fc-0060298a5488",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "6b4f37f9-a97d-45c3-86ad-f1017fe1bdb5",
+            "name": "updateOpnion",
+            "url": "opinion/update/65e20517a4fe975b9bee3415",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2024-03-01T17:42:25.660Z",
+            "modified": "2024-03-01T17:45:23.694Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZjE4OGE0ZmU5NzViOWJlZTM0MDgiLCJ1c2VybmFtZSI6ImpnYXJjaWEiLCJuYW1lIjoiSm9uYXRoYW4iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMwNjI1MiwiZXhwIjoxNzA5MzE3MDUyfQ.FaNHmZ61t3yJote7H0_A3zsg4LsfyML3h4nganEfSp0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Empresa no realiza fraude"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "76f67bd4-be1f-4dc6-8c35-cb992140359e",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "6b4f37f9-a97d-45c3-86ad-f1017fe1bdb5",
+            "name": "deleteOpinion",
+            "url": "",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-01T17:46:10.172Z",
+            "modified": "2024-03-01T17:46:10.172Z",
+            "headers": []
+        },
+        {
+            "_id": "e53f4961-59a2-446a-861b-a257aef7a5c3",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "6b4f37f9-a97d-45c3-86ad-f1017fe1bdb5",
+            "name": "searchOpinion",
+            "url": "opinion/search",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2024-03-01T17:46:37.529Z",
+            "modified": "2024-03-01T17:48:39.237Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUxZjE4OGE0ZmU5NzViOWJlZTM0MDgiLCJ1c2VybmFtZSI6ImpnYXJjaWEiLCJuYW1lIjoiSm9uYXRoYW4iLCJyb2xlIjoiVVNFUiIsImlhdCI6MTcwOTMwNjI1MiwiZXhwIjoxNzA5MzE3MDUyfQ.FaNHmZ61t3yJote7H0_A3zsg4LsfyML3h4nganEfSp0"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "Empresa fraude nacional"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d84e14c9-6dcc-47fb-a03c-6d49f0e596b1",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "edfd3f01-0e90-41e4-9310-c48b1cedc92d",
+            "name": "updateComment",
+            "url": "",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-03-01T17:51:39.225Z",
+            "modified": "2024-03-01T17:51:39.225Z",
+            "headers": []
+        },
+        {
+            "_id": "7823ec9c-ad89-46fd-96a4-e54804022c87",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "edfd3f01-0e90-41e4-9310-c48b1cedc92d",
+            "name": "deleteComment",
+            "url": "comment/deteleC/",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2024-03-01T17:51:50.364Z",
+            "modified": "2024-03-01T17:58:12.363Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4f6c892a-aa6b-472e-b933-27a952e08098",
+            "colId": "95f11afc-f4b9-4546-a814-e45a7ea3b7dc",
+            "containerId": "edfd3f01-0e90-41e4-9310-c48b1cedc92d",
+            "name": "searchComment",
+            "url": "",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2024-03-01T17:52:03.404Z",
+            "modified": "2024-03-01T17:52:03.404Z",
+            "headers": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2636/"
+        }
+    }
+}
